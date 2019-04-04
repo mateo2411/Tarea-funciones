@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void printHelloMsg (string mensaje, int repeticiones)
+{
+    int I = repeticiones;
+    string frase;
+    do
+    {
+        frase = frase+mensaje;
+        --I;
+    }while(I>0);
+    cout<<frase<<endl;
+}
+
+int main()
+{
+    void printHelloMsg(string mensaje = "Sin mensaje",int repeticiones = 1);
+    string msg = "¡Que comience la fiesta!";
+	printHelloMsg();
+	printHelloMsg(msg);
+	printHelloMsg(msg, 4);
+}
